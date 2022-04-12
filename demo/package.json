@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^0.1.0",
-    "@sarissa/pagination": "./packages/my-component"
+    "@sarissa/pagination": "./packages/pagination"
   }
 }

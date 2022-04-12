@@ -18,7 +18,7 @@ const totalPage = 10;
     </style>
   </head>
 
-  <body class="flex flex-col justify-center gap-3">
+  <body class="flex flex-col justify-center gap-3 bg-inherit">
     <h2 class="text-center text-4xl font-bold">Welcome to Sarissa Paging</h2>
     <h2 class="text-center text-2xl font-bold">Default Style</h2>
     <p class="text-center">Only 2 items begining and end shown</p>
@@ -88,5 +88,19 @@ const totalPage = 10;
       url="posts"
       activeButton="activeButton"
     />
+
+	<!-- This hiddens added for testing demo -->
+    <div class="flex items-center justify-center hidden">
+      <div class="">
+        <a
+          class="relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium bg-sky-500 text-white"
+          >1</a
+        >
+        <a
+          class="relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium activeButton"
+          >1</a
+        >
+      </div>
+    </div>
   </body>
 </html>
