@@ -1,45 +1,42 @@
-# Astro Starter Kit: Component
+# sarissa-pagination
 
-```
-npm init astro -- --template component
-```
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/10682780/162905825-223f3257-c2a9-494d-bc56-ddcb075ec2f4.png">
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/component)
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── demo/
-│   ├── public/
-│   └── src/
-│       └── pages/
-│           └── index.astro
-└── packages/
-    └── my-component/
-        ├── index.js
-        └── package.json
+## Installation
+```js
+npm install sarissa-pagination
 ```
 
-This project uses **workspaces** to develop a single package, `sarissa-pagination`, from `packages/my-component`. It also includes a `demo` Astro site for testing and demonstrating the component.
+## Usage
+```js
+import { Pagination } from "sarissa-pagination";
 
+//Must set your total page count
+const totalPage = 10;
+---
+<style is:global>
+      .activeButton {
+        --tw-bg-opacity: 1;
+        background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+        color: wheat;
+      }
+</style>
 
+<Pagination currentPage="1" {totalPage} url="posts" />
 
-## 🧞 Commands
+<Pagination currentPage="3" {totalPage} url="posts" activeButton="activeButton"
+    />
+```
 
-All commands are run from the root of the project, from a terminal:
+### Component Props
 
-| Command           | Action                                       |
-|:----------------  |:-------------------------------------------- |
-| `npm install`     | Installs dependencies                        |
-| `npm run dev`     | Starts local dev server at `localhost:3000`  |
-| `npm run build`   | Build your production site to `./dist/`      |
-| `npm run preview` | Preview your build locally, before deploying |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://github.com/withastro/astro) or jump into our [Discord server](https://astro.build/chat).
+Name | Description
+--- | --- 
+outerDiv | Outer div style of pagination buttons (default: flex items-center justify-center)
+buttonGroup | Style of button group (no default)
+button | Style of all page number buttons (default: relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium)
+activeButton | Style of active page button (default: bg-sky-500 text-white)
+disabledButton | Style of disabled buttons (default: disabled:opacity-75)
+currentPage | Current page number (required)
+totalPage | Total page numbers (required)
+url | Url of slug (required. ex: 'post','categories')

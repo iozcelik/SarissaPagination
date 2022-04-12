@@ -1,37 +1,42 @@
-# Example `sarissa-pagination`
+# sarissa-pagination
 
-This is an example package, exported as `sarissa-pagination`. It consists of two Astro components, **Button** and **Heading**.
+<img width="505" alt="image" src="https://user-images.githubusercontent.com/10682780/162905825-223f3257-c2a9-494d-bc56-ddcb075ec2f4.png">
 
-### Button
-
-The **Button** component generates a `<button>` with a default **type** of **button**.
-
-```astro
----
-import * as Component from 'sarissa-pagination'
----
-<Component.Button>Plain Button</Component.Button>
+## Installation
+```js
+npm install sarissa-pagination
 ```
 
-```html
-<!-- generated html -->
-<button type="button">Plain Button</button>
-```
+## Usage
+```js
+import { Pagination } from "sarissa-pagination";
 
-### Heading
-
-The **Heading** component generates an `<h>` tag with a default **role** of **heading** and a **level** attribute that gets written to **aria-level**.
-
-```astro
+//Must set your total page count
+const totalPage = 10;
 ---
-import * as Component from 'sarissa-pagination'
----
-<Component.Heading>Heading</Component.Heading>
-<Component.Heading level="2">Subheading</Component.Heading>
+<style is:global>
+      .activeButton {
+        --tw-bg-opacity: 1;
+        background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+        color: wheat;
+      }
+</style>
+
+<Pagination currentPage="1" {totalPage} url="posts" />
+
+<Pagination currentPage="3" {totalPage} url="posts" activeButton="activeButton"
+    />
 ```
 
-```html
-<!-- generated html -->
-<h role="heading" aria-level="1">Plain Button</h>
-<h role="heading" aria-level="2">Subheading</h>
-```
+### Component Props
+
+Name | Description
+--- | --- 
+outerDiv | Outer div style of pagination buttons (default: flex items-center justify-center)
+buttonGroup | Style of button group (no default)
+button | Style of all page number buttons (default: relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium)
+activeButton | Style of active page button (default: bg-sky-500 text-white)
+disabledButton | Style of disabled buttons (default: disabled:opacity-75)
+currentPage | Current page number (required)
+totalPage | Total page numbers (required)
+url | Url of slug (required. ex: 'post','categories')
