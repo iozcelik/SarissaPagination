@@ -1,0 +1,20 @@
+{
+  "name": "@sarissa/pagination",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./Pagination": "./Pagination.astro"
+  },
+  "files": [
+    "index.js",
+    "Pagination.astro"
+  ],
+  "keywords": [
+    "astro-component",
+    "astro",
+    "pagination",
+    "page-numbers"
+  ]
+}

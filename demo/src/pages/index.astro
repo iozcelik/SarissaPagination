@@ -1,0 +1,92 @@
+---
+import { Pagination } from "@sarissa/pagination";
+
+const totalPage = 10;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome to Astro</title>
+    <style is:global>
+      .activeButton {
+        --tw-bg-opacity: 1;
+        background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+        color: wheat;
+      }
+    </style>
+  </head>
+
+  <body class="flex flex-col justify-center gap-3">
+    <h2 class="text-center text-4xl font-bold">Welcome to Sarissa Paging</h2>
+    <h2 class="text-center text-2xl font-bold">Default Style</h2>
+    <p class="text-center">Only 2 items begining and end shown</p>
+    <Pagination currentPage="1" {totalPage} url="posts" />
+    <p class="text-center">
+      Keep 2 items begining and end, also add new items (3,4)
+    </p>
+    <Pagination currentPage="3" {totalPage} url="posts" />
+    <p class="text-center">
+      Keep 2 items begining and end, also add current page, previous and after
+      current page (4,5,6)
+    </p>
+    <Pagination currentPage="5" {totalPage} url="posts" />
+    <p class="text-center">
+      Keep 2 items begining and end, also add current page, previous and after
+      current page (6,7,8)
+    </p>
+    <Pagination currentPage="7" {totalPage} url="posts" />
+    <p class="text-center">
+      Keep 2 items begining and end, also add previous page (8)
+    </p>
+    <Pagination currentPage="9" {totalPage} url="posts" />
+
+    <h2 class="text-center text-2xl font-bold">Custom Style</h2>
+    <p class="text-center">Only 2 items begining and end shown</p>
+    <Pagination
+      currentPage="1"
+      {totalPage}
+      url="posts"
+      activeButton="activeButton"
+    />
+    <p class="text-center">
+      Keep 2 items begining and end, also add new items (3,4)
+    </p>
+    <Pagination
+      currentPage="3"
+      {totalPage}
+      url="posts"
+      activeButton="activeButton"
+    />
+    <p class="text-center">
+      Keep 2 items begining and end, also add current page, previous and after
+      current page (4,5,6)
+    </p>
+    <Pagination
+      currentPage="5"
+      {totalPage}
+      url="posts"
+      activeButton="activeButton"
+    />
+    <p class="text-center">
+      Keep 2 items begining and end, also add current page, previous and after
+      current page (6,7,8)
+    </p>
+    <Pagination
+      currentPage="7"
+      {totalPage}
+      url="posts"
+      activeButton="activeButton"
+    />
+    <p class="text-center">
+      Keep 2 items begining and end, also add previous page (8)
+    </p>
+    <Pagination
+      currentPage="9"
+      {totalPage}
+      url="posts"
+      activeButton="activeButton"
+    />
+  </body>
+</html>
