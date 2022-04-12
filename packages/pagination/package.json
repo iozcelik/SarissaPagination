@@ -1,7 +1,6 @@
 {
-  "name": "@sarissa/pagination",
+  "name": "sarissa-pagination",
   "version": "1.0.0",
-  "private": true,
   "type": "module",
   "author": "iozcelik",
   "license": "MIT",

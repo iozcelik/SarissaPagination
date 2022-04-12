@@ -25,7 +25,7 @@ Inside of your Astro project, you'll see the following folders and files:
         └── package.json
 ```
 
-This project uses **workspaces** to develop a single package, `@sarissa/pagination`, from `packages/my-component`. It also includes a `demo` Astro site for testing and demonstrating the component.
+This project uses **workspaces** to develop a single package, `sarissa-pagination`, from `packages/my-component`. It also includes a `demo` Astro site for testing and demonstrating the component.
 
 
 

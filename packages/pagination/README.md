@@ -1,6 +1,6 @@
-# Example `@sarissa/pagination`
+# Example `sarissa-pagination`
 
-This is an example package, exported as `@sarissa/pagination`. It consists of two Astro components, **Button** and **Heading**.
+This is an example package, exported as `sarissa-pagination`. It consists of two Astro components, **Button** and **Heading**.
 
 ### Button
 
@@ -8,7 +8,7 @@ The **Button** component generates a `<button>` with a default **type** of **but
 
 ```astro
 ---
-import * as Component from '@sarissa/pagination'
+import * as Component from 'sarissa-pagination'
 ---
 <Component.Button>Plain Button</Component.Button>
 ```
@@ -24,7 +24,7 @@ The **Heading** component generates an `<h>` tag with a default **role** of **he
 
 ```astro
 ---
-import * as Component from '@sarissa/pagination'
+import * as Component from 'sarissa-pagination'
 ---
 <Component.Heading>Heading</Component.Heading>
 <Component.Heading level="2">Subheading</Component.Heading>
