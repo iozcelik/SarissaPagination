@@ -1,6 +1,6 @@
 # @sarissa/pagination
 
-<a href="https://stackblitz.com/github/iozcelik/SarissaPagination" rel="nofollow"><img src="https://user-images.githubusercontent.com/10682780/163113951-9e30911b-bc57-4cbe-a837-f59053cf0355.svg" alt="Open in StackBlitz" data-canonical-src="https://developer.stackblitz.com/img/open_in_stackblitz.svg" style="max-width: 100%;"></a>
+Add page number buttons for pagination. Automaticly add and disable numbers as current page number.
 
 <img width="505" alt="image" src="https://user-images.githubusercontent.com/10682780/162905825-223f3257-c2a9-494d-bc56-ddcb075ec2f4.png">
 
@@ -8,7 +8,6 @@
 ```js
 npm install @sarissa/pagination
 ```
-
 
 ## Usage
 ```js
