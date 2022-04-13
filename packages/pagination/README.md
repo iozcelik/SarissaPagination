@@ -1,5 +1,7 @@
 # @sarissa/pagination
 
+Add page number buttons for pagination. Automaticly add and disable numbers as current page number.
+
 <img width="505" alt="image" src="https://user-images.githubusercontent.com/10682780/162905825-223f3257-c2a9-494d-bc56-ddcb075ec2f4.png">
 
 ## Installation
