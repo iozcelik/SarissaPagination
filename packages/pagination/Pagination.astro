@@ -15,7 +15,7 @@ const { outerDiv = "flex items-center justify-center",
   button= "relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium",
   activeButton= "bg-sky-500 text-white",
   disabledButton= "disabled:opacity-75",
-  currentPage, totalPage, url } = Astro.props;
+  currentPage, totalPage, url } = Astro.props as Props;
 
 
 let pageStatuses =Array.from({ length: totalPage }, (v, i) => i + 1).map(i=>{
