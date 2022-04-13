@@ -1,5 +1,5 @@
 {
-  "name": "sarissa-pagination-demo",
+  "name": "@sarissa/pagination-demo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^0.1.0",
-    "sarissa-pagination": "./packages/pagination"
+    "@sarissa/pagination": "./packages/pagination"
   }
 }

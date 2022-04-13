@@ -1,15 +1,15 @@
-# sarissa-pagination
+# @sarissa/pagination
 
 <img width="505" alt="image" src="https://user-images.githubusercontent.com/10682780/162905825-223f3257-c2a9-494d-bc56-ddcb075ec2f4.png">
 
 ## Installation
 ```js
-npm install sarissa-pagination
+npm install @sarissa/pagination
 ```
 
 ## Usage
 ```js
-import { Pagination } from "sarissa-pagination";
+import { Pagination } from "@sarissa/pagination";
 
 //Must set your total page count
 const totalPage = 10;
