@@ -34,11 +34,11 @@ const totalPage = 10;
 
 Name | Description
 --- | --- 
-outerDiv | Outer div style of pagination buttons (default: flex items-center justify-center)
-buttonGroup | Style of button group (no default)
-button | Style of all page number buttons (default: relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium)
-activeButton | Style of active page button (default: bg-sky-500 text-white)
-disabledButton | Style of disabled buttons (default: disabled:opacity-75)
+outerDiv | Outer div classes of pagination buttons (default: flex items-center justify-center)
+buttonGroup | Classes of button group (no default)
+button | Classes of all page number buttons (default: relative flex-nowrap inline-flex items-center px-4 py-2 border text-sm font-medium)
+activeButton | Classes of active page button (default: bg-sky-500 text-white)
+disabledButton | Classes of disabled buttons (default: disabled:opacity-75)
 currentPage | Current page number (required)
 totalPage | Total page numbers (required)
 url | Url of slug (required. ex: 'post','categories')
