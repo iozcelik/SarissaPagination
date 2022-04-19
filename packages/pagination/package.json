@@ -1,7 +1,7 @@
 {
   "name": "@sarissa/pagination",
   "desciption": "Add page number buttons for pagination. Automaticly add and disable numbers as current page number.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "author": "iozcelik",
   "license": "MIT",
